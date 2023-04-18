@@ -8,6 +8,7 @@ import PrimaryBtn from "@components/buttons/PrimaryBtn";
 
 import heroImg from "@img/home-hero.jpg";
 import Map from "@sections/Map.astro";
+import GoToWealth from "@sections/GoToWealth.astro";
 ---
 
 <Layout
@@ -17,7 +18,7 @@ import Map from "@sections/Map.astro";
       "Natural State Wealth Advisors offers tax and financial advising to help you achieve your financial goals.",
   }}
 >
-  <Hero img={heroImg} title="Wealth">
+  <Hero img={heroImg} title="Tax">
     <div
       class="max-w-[1000px] py-16 lg:py-32 mx-auto text-white text-center relative z-10"
     >
@@ -37,4 +38,5 @@ import Map from "@sections/Map.astro";
   <Map />
   <OurServices />
   <Testimonial />
+  <GoToWealth />
 </Layout>
