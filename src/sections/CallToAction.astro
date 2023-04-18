@@ -1,0 +1,27 @@
+---
+import { Image } from "@astrojs/image/components";
+import PrimaryBtn from "@components/buttons/PrimaryBtn";
+---
+
+<section class="px-edge py-32 relative">
+  <Image
+    format="webp"
+    src={import("@img/testimonial-background.jpg")}
+    alt="natural state wealth advisor call to action"
+    class="absolute inset-0 h-full w-full object-cover"
+  />
+  <div
+    class="max-w-screen-xl mx-auto relative z-10 flex flex-col lg:flex-row justify-between items-center gap-10"
+  >
+    <div class="max-w-3xl text-text-light text-center lg:text-left">
+      <h2 class="font-bold text-3xl lg:text-5xl">
+        See how Natural State can help you with your tax return and financial
+        planning
+      </h2>
+      <p class="mt-3 font-rubik text-xl leading-relaxed">
+        Book a call with us today to take the next steps toward better finances.
+      </p>
+    </div>
+    <PrimaryBtn to="/contact">Book An Appointment</PrimaryBtn>
+  </div>
+</section>

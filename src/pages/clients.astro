@@ -1,0 +1,40 @@
+---
+import Testimonial from "@sections/Testimonial.astro";
+import Clients from "@sections/Clients.astro";
+import Layout from "src/layouts/Layout.astro";
+import Hero from "@sections/Hero.astro";
+import Workflow from "@sections/Workflow.astro";
+
+import { Image } from "@astrojs/image/components";
+import heroImg from "@img/clients-hero-banner.jpg";
+---
+
+<Layout
+  seo={{
+    metaTitle: "Client Process | Natural State Wealth Advisors",
+    metaDescription:
+      "Natural State Wealth Advisors offers a customer centric approach to tax and financial advising.",
+  }}
+>
+  <Hero img={heroImg} title="Clients">
+    <div
+      class="py-20 max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center lg:items-start justify-between gap-10"
+    >
+      <div class="max-w-md text-center lg:text-left">
+        <h1 class="font-bold text-5xl lg:text-7xl text-text-light">
+          Client Experience
+        </h1>
+        <p class="mt-7 font-rubik font-semibold text-xl text-text-off-white">
+          As fiduciaries we always put our clients first.
+        </p>
+      </div>
+      <Image
+        src={import("@img/clients-hero.jpg")}
+        alt="Natural State Wealth Advisors Client Experience"
+      />
+    </div>
+  </Hero>
+  <Workflow />
+  <Clients />
+  <Testimonial />
+</Layout>

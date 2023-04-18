@@ -1,0 +1,45 @@
+---
+import { Image } from "@astrojs/image/components";
+
+const clients = [
+  {
+    src: import("@img/clients/homes-of-distinction.png"),
+    alt: "home of distinction",
+  },
+  {
+    src: import("@img/clients/walmart.png"),
+    alt: "walmart",
+  },
+  {
+    src: import("@img/clients/the-stable.png"),
+    alt: "the stable",
+  },
+  {
+    src: import("@img/clients/tyson.png"),
+    alt: "tyson",
+  },
+  {
+    src: import("@img/clients/sams-club.png"),
+    alt: "sams club",
+  },
+  {
+    src: import("@img/clients/jb-hunt.png"),
+    alt: "jb hunt",
+  },
+];
+---
+
+<section class="px-edge py-20">
+  <div class="max-w-screen-xl mx-auto">
+    <h2 class="text-4xl lg:text-6xl text-center">We Work With Clients From</h2>
+    <div
+      class="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 place-items-center gap-10"
+    >
+      {
+        clients.map((client) => (
+          <Image format="webp" src={client.src} alt={client.alt} />
+        ))
+      }
+    </div>
+  </div>
+</section>

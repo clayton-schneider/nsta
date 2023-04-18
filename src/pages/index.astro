@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Hero from "@sections/Hero.astro";
+import Testimonial from "@sections/Testimonial.astro";
+import OurServices from "@sections/OurServices.astro";
+import Benefits from "@sections/Benefits.astro";
+import PrimaryBtn from "@components/buttons/PrimaryBtn";
+
+import heroImg from "@img/home-hero.jpg";
+import Map from "@sections/Map.astro";
+---
+
+<Layout
+  seo={{
+    metaTitle: "Natural State Wealth Advisors",
+    metaDescription:
+      "Natural State Wealth Advisors offers tax and financial advising to help you achieve your financial goals.",
+  }}
+>
+  <Hero img={heroImg} title="Wealth">
+    <div
+      class="max-w-[1000px] py-16 lg:py-32 mx-auto text-white text-center relative z-10"
+    >
+      <h1 class="font-bold text-4xl lg:text-6xl">
+        A holistic and strategic approach to managing your tax and financial
+        affairs
+      </h1>
+      <p class="mt-7 font-rubik font-semibold text-xl text-text-off-white">
+        Empowering you to reach your financial goals.
+      </p>
+      <PrimaryBtn to="/contact" className="mt-10"
+        >Book An Appointment</PrimaryBtn
+      >
+    </div>
+  </Hero>
+  <Benefits />
+  <Map />
+  <OurServices />
+  <Testimonial />
+</Layout>
