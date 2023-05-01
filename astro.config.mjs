@@ -21,6 +21,7 @@ export default defineConfig({
         applyBaseStyles: false,
       },
     }),
+    sitemap(),
     image(),
     react(),
   ],

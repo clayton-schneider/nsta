@@ -1,2 +1,4 @@
+Sitemap: https://www.nstaxadvisors.com/sitemap-index.xml
+
 User-agent: *
 Disallow: /
