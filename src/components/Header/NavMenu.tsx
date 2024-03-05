@@ -33,7 +33,7 @@ const NavMenu = ({ links }: Props) => {
             <a href={link.link}>{link.linkText}</a>
           </li>
         ))}
-        <li className="w-full">
+        <li className="w-full xl:hidden">
           <a
             target="_blank"
             href="https://onvio.us/clientcenter"
@@ -42,10 +42,10 @@ const NavMenu = ({ links }: Props) => {
             Client Portal
           </a>
         </li>
-        <li className="w-full">
+        <li className="w-full xl:hidden">
           <a
             href="javascript:document.getElementById('loginform').submit();"
-            className="block px-10 py-3 min-w-sm rounded-full text-lg cursor-pointer  border border-text-green text-text-green xl:!hidden text-center"
+            className="block px-10 py-3 min-w-sm rounded-full text-lg cursor-pointer  border border-text-green text-text-green text-center"
           >
             Pay My Bill
           </a>
